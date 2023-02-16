@@ -6,7 +6,8 @@ This is an API we built for a Malayalam Automatic Speech Recognition model done 
 - It will then use the XLS-R with KenLM model finetuned for the Malayalam language (WER: 30% on Non-OOD datasets) to generate the transcript.
 - This transcript is then with a Malayalam-English language translator to generate the English transcript (Translator API used can be found [here](https://rapidapi.com/sibaridev/api/rapid-translate-multi-traduction)).
 - Gtts is then used to obtain the Audio file for the English translation.
-- How to Use
+
+##How to Use
   1.  Clone the Repo
   2.  Install all the dependencies
   3.  Clone the repo of the model from hugging face.
