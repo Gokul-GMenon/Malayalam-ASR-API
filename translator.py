@@ -6,10 +6,12 @@ class Translator:
     def __init__(self):
 
         self.url = "https://rapid-translate-multi-traduction.p.rapidapi.com/t"
-
+	
+	file = open("API_KEY.txt")
+	
         self.headers = {
             "content-type": "application/json",
-            "X-RapidAPI-Key": "e305f608a8msha9fd8fddbcfc877p12bfb1jsnb78ed1c9306a",
+            "X-RapidAPI-Key": file.read(),
             "X-RapidAPI-Host": "rapid-translate-multi-traduction.p.rapidapi.com"
         }
 
